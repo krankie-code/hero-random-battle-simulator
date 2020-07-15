@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class = "icon">
+        <i class="fa fa-volume-up"></i>
+    </div>
+    <header>
+        
+     <img src="" alt="logo" class = "logo">
+        <nav>
+            <ul class = "nav_links">
+                <li><a href="#about">About</a></li>
+                <li><button type='submit' id = "button">Log in</button></li>
+                <li><a href="sign_in.html">Sign in</a></li>                    
+
+            </ul>
+        </nav>
+    </header> 
+    <h1>Hero Battle Simulator</h1>
+    <div class="container">
+  <div class="row">
+    <div class="col col1">Column 1</div>
+    <div class="col col2">Column 2</div>
+    <div class="col col3">Column 3</div>
+    <div class="col col4">Column 4</div>
+    <div class="col col5">Column 5</div>
+  </div>
+</div>
+    <section id ="about">
+        <h2>About us</h2>
+        <div class = "questions">
+            <h3>Q&A</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id nisl sem. Nulla porta fringilla lorem at iaculis. Nulla varius, dui ac cursus ornare, nibh massa fermentum eros, dignissim mattis leo tortor vel neque. Sed dictum iaculis risus, ut ornare libero dapibus eu</p>
+        </div>
+        <div class = 'questions'>
+            <h3>Q&A</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id nisl sem. Nulla porta fringilla lorem at iaculis. Nulla varius, dui ac cursus ornare, nibh massa fermentum eros, dignissim mattis leo tortor vel neque. Sed dictum iaculis risus, ut ornare libero dapibus eu</p>
+        </div>
+        <div class = 'questions'>
+            <h3>Q&A</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id nisl sem. Nulla porta fringilla lorem at iaculis. Nulla varius, dui ac cursus ornare, nibh massa fermentum eros, dignissim mattis leo tortor vel neque. Sed dictum iaculis risus, ut ornare libero dapibus eu</p>
+        </div>
+        <div class = 'questions'>
+            <h3>Q&A</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id nisl sem. Nulla porta fringilla lorem at iaculis. Nulla varius, dui ac cursus ornare, nibh massa fermentum eros, dignissim mattis leo tortor vel neque. Sed dictum iaculis risus, ut ornare libero dapibus eu</p>
+        </div>
+    </section>
+    <div class = "pop">
+        <div class="model-content">
+            <div class="close">+</div>
+            <img src="" alt="">
+            <section class = "d-flex justify-content-center ">
+                
+                <form class = "form-container">
+                     <h2>SIGN IN</h2>
+                     <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Your superhero power">
+                      </div>
+                     <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repeat password">
+                      </div>
+                      <div class = "text-center ">
+                      <button type="submit" class="btn btn-primary ">Submit</button>
+                      </div>
+                    </form>
+            </section>
+
+        </div>
+
+    </div>
+    <footer></footer>
+    <script>
+        var arr = [];
+        function random (){
+    var selectN = Math.floor(Math.random()*731)
+    var string = `url:(https://superheroapi.com/api/599075271045222/${selectN})`
+
+
+
+    return arr.push(string)
+    }
+
+    for(var i = 0; i < 5; i++){
+        random()
+    }   
+    console.log(arr);
+
+    document.getElementById('button').addEventListener('click', function (){
+        document.querySelector('.pop').style.display = "flex"
+    })
+    
+    document.querySelector('.close').addEventListener('click', function (){
+        document.querySelector('.pop').style.display = "none"
+    })
+
+    </script>
+</body>
+</html>

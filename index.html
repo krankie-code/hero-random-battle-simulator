@@ -65,8 +65,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id nisl sem. Nulla porta fringilla lorem at iaculis. Nulla varius, dui ac cursus ornare, nibh massa fermentum eros, dignissim mattis leo tortor vel neque. Sed dictum iaculis risus, ut ornare libero dapibus eu</p>
         </div>
     </section>
-    <div id = "modal">
-        <div class="modal">
+    <div id = "modal" class = "modal">
+        <div>
             <div class="model-header">
                 <h2>SIGN IN</h2>
                 <img class ="user" src="img\user.png" alt="">
@@ -137,6 +137,7 @@
             button.addEventListener('click', ()=>{
                 const modal = document.querySelector(button.dataset.modalTarget)
                 openModal(modal)
+                
             })
         })
         

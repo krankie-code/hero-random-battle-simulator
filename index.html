@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body style ="background-color;">
     <div class = "icon">
         <i class="fa fa-volume-up"></i>
     </div>
@@ -17,16 +17,27 @@
         
      <img src="" alt="logo" class = "logo">
         <nav>
+            <div class ="nav-bar">
+                <h6>Do you have the strength to become a superheroe?</h6>
             <ul class = "nav_links">
+                <li><a href="#">Home</a>   </li>
+                <li><a href="#">Heroes</a></li>
+                <li> <a href="#">Compete</a></li>
+                <li><a href="#">Ranking</a></li>
                 <li><a href="#about">About</a></li>
-                <li><button type='submit' id = "button">Log in</button></li>
-                <li><a href="sign_in.html">Sign in</a></li>                    
+                                 
 
             </ul>
+            </div>
         </nav>
+        <img src="" alt="">
+        <form class = "buttons" action="">
+            <button class ="right" type='submit' id = "button">Log in</button>
+            <button class ="right sign"type ='submit' id ='buttonL'>Sign in</button>
+        </form>
     </header> 
-    <h1>Hero Battle Simulator</h1>
     <div class="container">
+        <a class = "game" href ="game.html">Let's Battle</a>
   <div class="row">
     <div class="col col1">Column 1</div>
     <div class="col col2">Column 2</div>
@@ -56,12 +67,14 @@
     </section>
     <div class = "pop">
         <div class="model-content">
-            <div class="close">+</div>
-            <img src="" alt="">
+            <div class="model-header">
+                <h2>SIGN IN</h2>
+                <img class ="user" src="img\user.png" alt="">
+                <div class="close">&times;</div>
+            </div>
             <section class = "d-flex justify-content-center ">
                 
-                <form class = "form-container">
-                     <h2>SIGN IN</h2>
+                <form>
                      <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
                       </div>
@@ -82,13 +95,53 @@
                       </div>
                     </form>
             </section>
+        
 
         </div>
 
     </div>
+    <div class="pop2">
+            <div class="model-content">
+                <div class="model-header">
+                    <h2>LOG IN</h2>
+                    <img class ="user" src="img\user.png" alt="">
+                    <div class="close2">&times;</div>
+                </div>
+
+                    <section class = "d-flex justify-content-center ">
+                        <form>
+                            <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class = "text-center ">
+                            <button type="submit" class="btn btn-primary ">Submit</button>
+                            </div>
+                        </form>
+                
+            </div>
+    </div>
     <footer></footer>
     <script>
-        var arr = [];
+        //fix
+    document.getElementById('button').addEventListener('click', function (){
+        document.querySelector('.pop').style.display = "flex"
+    })
+    
+    document.querySelector('.close').addEventListener('click', function (){
+        document.querySelector('.pop').style.display = "none"
+    })
+
+    document.getElementById('buttonL').addEventListener('click', function (){
+        document.querySelector('.pop2').style.display = "flex"
+    })
+    document.querySelector('.close2').addEventListener('click', function (){
+        document.querySelector('.pop2').style.display = "none"
+    })
+
+
         function random (){
     var selectN = Math.floor(Math.random()*731)
     var string = `url:(https://superheroapi.com/api/599075271045222/${selectN})`
@@ -102,15 +155,53 @@
         random()
     }   
     console.log(arr);
-
-    document.getElementById('button').addEventListener('click', function (){
-        document.querySelector('.pop').style.display = "flex"
-    })
     
-    document.querySelector('.close').addEventListener('click', function (){
-        document.querySelector('.pop').style.display = "none"
-    })
+    
+    
+    setInterval(function() {
+        var images = [
+        "https://www.superherodb.com/pictures2/portraits/10/100/1485.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/940.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/637.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/1293.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/1496.jpg"
+    ]
+        var imageHead = document.querySelectorAll('.col')
+        var i = 0;
+      imageHead.style.backgroundImage = "url(" + images[i] + ")";
+      i = i + 1;
+      if (i == images.length) {
+        i =  0;
+      }
+    }, 1000);
+
+    var columns = document.querySelectorAll('.col')
+
+    var pics =["https://www.superherodb.com/pictures2/portraits/10/100/1485.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/940.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/637.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/1293.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/1496.jpg"]
+
+        pics.forEach((pic) =>{
+            columns.style.backgroundImage = `url(${pics[select]})`
+        })
+        //fix
+        var select = Math.floor(Math.random()*pics.length);
+        
+        for(var i = 0; i< pics.length;i++){
+
+        columns[i].style.backgroundImage = `url(${pics[select]})`
+
+    }
+    
+
 
     </script>
+    <script src = "src/Database.js"></script>
+    <script src = "src/Signup.js"></script>
+    <script src = "src/User.js"></script>
+    <script src = "src/Validator.js"></script>
+    <script src= "src/Login.js"></script>
 </body>
 </html>

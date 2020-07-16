@@ -32,7 +32,7 @@
         </nav>
         <img src="" alt="">
         <form class = "buttons" action="">
-            <button class ="right" type='submit' id = "button">Log in</button>
+            <button data-modal-target ="#modal" class ="right" type='submit' id = "button">Log in</button>
             <button class ="right sign"type ='submit' id ='buttonL'>Sign in</button>
         </form>
     </header> 
@@ -65,12 +65,12 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id nisl sem. Nulla porta fringilla lorem at iaculis. Nulla varius, dui ac cursus ornare, nibh massa fermentum eros, dignissim mattis leo tortor vel neque. Sed dictum iaculis risus, ut ornare libero dapibus eu</p>
         </div>
     </section>
-    <div class = "pop">
-        <div class="model-content">
+    <div id = "modal">
+        <div class="modal">
             <div class="model-header">
                 <h2>SIGN IN</h2>
                 <img class ="user" src="img\user.png" alt="">
-                <div class="close">&times;</div>
+                <div data-close-botton class="close">&times;</div>
             </div>
             <section class = "d-flex justify-content-center ">
                 
@@ -100,6 +100,7 @@
         </div>
 
     </div>
+    <div id = 'overlay'></div>
     <div class="pop2">
             <div class="model-content">
                 <div class="model-header">
@@ -123,26 +124,30 @@
                 
             </div>
     </div>
+    <div id="overlay"></div>
     <footer></footer>
     <script>
-        //fix
-    document.getElementById('button').addEventListener('click', function (){
-        document.querySelector('.pop').style.display = "flex"
-    })
+
+        const openModalButtons = document.querySelectorAll('[data-modal-target]')
+        const closeModalButtons = document.querySelectorAll('[data-close-button]')
+
+        const overlay = document.getElementById('overlay')
+
+        openModalButtons.forEach(button =>{
+            button.addEventListener('click', ()=>{
+                const modal = document.querySelector(button.dataset.modalTarget)
+                openModal(modal)
+            })
+        })
+        
+        function openModal(modal){
+            if(modal == null) return
+            modal.classList.add('active')
+            overlay.classList.add('active')
+        }
     
-    document.querySelector('.close').addEventListener('click', function (){
-        document.querySelector('.pop').style.display = "none"
-    })
 
-    document.getElementById('buttonL').addEventListener('click', function (){
-        document.querySelector('.pop2').style.display = "flex"
-    })
-    document.querySelector('.close2').addEventListener('click', function (){
-        document.querySelector('.pop2').style.display = "none"
-    })
-
-
-        function random (){
+       /*  function random (){
     var selectN = Math.floor(Math.random()*731)
     var string = `url:(https://superheroapi.com/api/599075271045222/${selectN})`
 
@@ -155,25 +160,9 @@
         random()
     }   
     console.log(arr);
+     */
     
-    
-    
-    setInterval(function() {
-        var images = [
-        "https://www.superherodb.com/pictures2/portraits/10/100/1485.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/940.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/637.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/1293.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/1496.jpg"
-    ]
-        var imageHead = document.querySelectorAll('.col')
-        var i = 0;
-      imageHead.style.backgroundImage = "url(" + images[i] + ")";
-      i = i + 1;
-      if (i == images.length) {
-        i =  0;
-      }
-    }, 1000);
+
 
     var columns = document.querySelectorAll('.col')
 
@@ -183,15 +172,20 @@
         "https://www.superherodb.com/pictures2/portraits/10/100/1293.jpg",
         "https://www.superherodb.com/pictures2/portraits/10/100/1496.jpg"]
 
-        pics.forEach((pic) =>{
-            columns.style.backgroundImage = `url(${pics[select]})`
+
+        
+       /*  pics.forEach((pic) =>{
+          columns.style.backgroundImage = `url(${pics[select]})`
         })
-        //fix
-        var select = Math.floor(Math.random()*pics.length);
+        fix */
         
         for(var i = 0; i< pics.length;i++){
 
-        columns[i].style.backgroundImage = `url(${pics[select]})`
+        let select = Math.floor(Math.random() * pics.length)
+
+            columns[i].style.backgroundImage = `url('${pics[select]}')`
+        
+            pics.splice(select,1 )
 
     }
     

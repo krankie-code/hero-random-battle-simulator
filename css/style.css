@@ -8,6 +8,7 @@ box-sizing: border-box;
  font-family:'Bangers', Arial, Helvetica, sans-serif;
  color:white;
  scroll-behavior: smooth;
+ font-size:14px;
 
 }
 html, body{
@@ -22,7 +23,7 @@ header{
 li,a {
     text-decoration:none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.15em;
     color:#595959;
 }
 
@@ -46,6 +47,7 @@ margin-right: 30px;
    padding:0px 20px;
    
 }
+
 
 .nav_links li{
    margin:0px 10px;
@@ -93,16 +95,43 @@ h2{
 .col{
     border: 1px solid black;
     height:600px;
+    background-position: center;
 }
 .col1{
     background-image: url();
-    background-position: center;
 }
 .col2{
     background-image: url("https://www.superherodb.com/pictures2/portraits/10/100/22.jpg");
-    background-position: center;
 }
-.pop{
+
+.modal{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border:1px solid black;
+    border-radius:30px;
+    z-index:1;
+    background-color: white;
+    width:50%;
+
+
+}
+.modal.active{
+    transform: translate(-50%,-50%) scale(1);
+
+}
+
+.modal-header{
+    padding:10px 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;   
+}
+
+/*.pop{
     width:100%;
     height:100%;
     background-color:rgba(0,0,0,0.7);
@@ -125,7 +154,7 @@ h2{
     align-items:center;
     display:none;
 }
-
+*/
 
 .model-content{
       position:fixed;
@@ -137,9 +166,24 @@ h2{
       background-color: white;
 
 }
+
 .model-header{
 text-align: center;
 justify-content:center;
+}
+#overlay{
+    opacity: 0;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+}
+ #overlay.active{
+    pointer-events: all;
+    opacity: 1;
 }
 .user{
     width:30%;

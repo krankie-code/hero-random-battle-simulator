@@ -25,10 +25,7 @@ function getHeroes(){
             <li>Combat:${data.powerstats.combat}</li>
             </ul>
             `
-            console.log(Object.values(data.powerstats).reduce((t, {value}) => t + Number(value), 0))
-            console.log(data.powerstats)
-            console.log(sum(data.powerstats))
-            console.log(Number(data.powerstats.intelligence)+Number(data.powerstats.strength))
+            console.log(data)
 
             heroes.appendChild(article)
                  })

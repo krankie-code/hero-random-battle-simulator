@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body style ="background-color;">
+<body>
     <div class = "icon">
         <i class="fa fa-volume-up"></i>
     </div>
     <header>
         
-     <img src="" alt="logo" class = "logo">
+     <img src="img\rhb.png" alt="logo" class = "logo1">
         <nav>
             <div class ="nav-bar">
                 <h6>Do you have the strength to become a superheroe?</h6>
@@ -28,80 +28,121 @@
                                  
 
             </ul>
-            </div>
+          </div>
         </nav>
-        <img src="" alt="">
+        <img class = "logo"src="img\random heroe.png" alt="">
+        
         <form class = "buttons" action="">
-            <button data-modal-target ="#modal" class ="right" type='submit' id = "button">Log in</button>
-            <button class ="right sign"type ='submit' id ='buttonL'>Sign in</button>
+            <button data-target="#modal" data-toggle="modal" type='button' id = "button">Log in</button>
+            <button data-target="#modal1" data-toggle="modal" class ="right sign"type ='button' id ='buttonL'>Sign in</button>
         </form>
     </header> 
     <div class="container">
         <a class = "game" href ="game.html">Let's Battle</a>
   <div class="row">
-    <div class="col col1">Column 1</div>
-    <div class="col col2">Column 2</div>
-    <div class="col col3">Column 3</div>
-    <div class="col col4">Column 4</div>
-    <div class="col col5">Column 5</div>
+    <div class="col col1"></div>
+    <div class="col col2"></div>
+    <div class="col col3"></div>
+    <div class="col col4"></div>
+    <div class="col col5"></div>
   </div>
 </div>
     <section id ="about">
-        <h2>About us</h2>
+        <h2 class = "about">FAQ</h2>
         <div class = "questions">
-            <h3>Q&A</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id nisl sem. Nulla porta fringilla lorem at iaculis. Nulla varius, dui ac cursus ornare, nibh massa fermentum eros, dignissim mattis leo tortor vel neque. Sed dictum iaculis risus, ut ornare libero dapibus eu</p>
+            <h3>From where did you get this awesome API</h3>
+            <p>The site is called Superheroe API. They provide a huge variety of heoe objects with a lot of data</p>
         </div>
         <div class = 'questions'>
-            <h3>Q&A</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id nisl sem. Nulla porta fringilla lorem at iaculis. Nulla varius, dui ac cursus ornare, nibh massa fermentum eros, dignissim mattis leo tortor vel neque. Sed dictum iaculis risus, ut ornare libero dapibus eu</p>
+          <h3>Is this site In working progress?</h3>
+          <p>Yes, some functionallities will come later on, such as the whole heroe list or the battle system instalation</p>
         </div>
         <div class = 'questions'>
-            <h3>Q&A</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id nisl sem. Nulla porta fringilla lorem at iaculis. Nulla varius, dui ac cursus ornare, nibh massa fermentum eros, dignissim mattis leo tortor vel neque. Sed dictum iaculis risus, ut ornare libero dapibus eu</p>
+          <h3>Do you plan to use animations</h3>
+          <p>Yes, manly used on the battle system</p>
         </div>
         <div class = 'questions'>
-            <h3>Q&A</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id nisl sem. Nulla porta fringilla lorem at iaculis. Nulla varius, dui ac cursus ornare, nibh massa fermentum eros, dignissim mattis leo tortor vel neque. Sed dictum iaculis risus, ut ornare libero dapibus eu</p>
-        </div>
-    </section>
-    <div id = "modal" class = "modal">
-        <div>
-            <div class="model-header">
-                <h2>SIGN IN</h2>
-                <img class ="user" src="img\user.png" alt="">
-                <div data-close-botton class="close">&times;</div>
-            </div>
-            <section class = "d-flex justify-content-center ">
-                
-                <form>
-                     <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Your superhero power">
-                      </div>
-                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      </div>
-                      <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                      </div>
-                      <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repeat password">
-                      </div>
-                      <div class = "text-center ">
-                      <button type="submit" class="btn btn-primary ">Submit</button>
-                      </div>
-                    </form>
-            </section>
-        
-
-        </div>
-
+        <h3>Which one is your favourite heroe?</h3>
+        <p>My favourite heroe is probably Venom.</p>
+        <div class = 'questions'>
+          <h3>How is the displaying song called</h3>
+          <p>Populary known as 'la cumbia de los Vengadores'</p>
     </div>
-    <div id = 'overlay'></div>
-    <div class="pop2">
+    </section>
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <img class ="user" src="img\user.png" alt="">
+              <h5 class="modal-title" id="exampleModalLabel">SIGN IN</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <section class = "d-flex justify-content-center ">
+            
+                    <form>
+                         <div class="form-group">
+                            <input type="text" class="form-control" id="exampleName" placeholder="Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="examplePower" placeholder="Your superhero power">
+                          </div>
+                         <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          </div>
+                          <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                          <div class="form-group">
+                            <input type="password" class="form-control" id="exampleRepeatPassword1" placeholder="Repeat password">
+                          </div>
+                          <div class="message-container"></div>
+                          
+                        </form>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id = "btn" href = "">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            <img class ="user" src="img\user.png" alt="">
+              <h5 class="modal-title" id="exampleModalLabel">SIGN IN</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <section class = "d-flex justify-content-center ">
+                        <form>
+                         <div class="form-group">
+                            <input type="text" class="form-control" id="exampleEmail1" placeholder="Name">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="examplePassword1" placeholder="Email">
+                          </div>
+                         
+                          <div class="message-container1"></div>
+                          
+                        </form>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn1"  href = "">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- <div class="pop2">
             <div class="model-content">
                 <div class="model-header">
                     <h2>LOG IN</h2>
@@ -123,12 +164,11 @@
                         </form>
                 
             </div>
-    </div>
-    <div id="overlay"></div>
+    </div> -->
     <footer></footer>
     <script>
 
-        const openModalButtons = document.querySelectorAll('[data-modal-target]')
+        /* const openModalButtons = document.querySelectorAll('[data-modal-target]')
         const closeModalButtons = document.querySelectorAll('[data-close-button]')
 
         const overlay = document.getElementById('overlay')
@@ -146,7 +186,7 @@
             modal.classList.add('active')
             overlay.classList.add('active')
         }
-    
+     */
 
        /*  function random (){
     var selectN = Math.floor(Math.random()*731)
@@ -171,7 +211,46 @@
         "https://www.superherodb.com/pictures2/portraits/10/100/940.jpg",
         "https://www.superherodb.com/pictures2/portraits/10/100/637.jpg",
         "https://www.superherodb.com/pictures2/portraits/10/100/1293.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/1496.jpg"]
+        "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/1381.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/879.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/722.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/810.jpg",
+        'https://www.superherodb.com/pictures2/portraits/10/100/326.jpg',
+        'https://www.superherodb.com/pictures2/portraits/10/100/1041.jpg',
+        'https://www.superherodb.com/pictures2/portraits/10/100/1039.jpg',
+        "https://www.superherodb.com/pictures2/portraits/10/100/133.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/15.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/826.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/757.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/954.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/189.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/1468.jpg",
+        'https://www.superherodb.com/pictures2/portraits/10/100/10444.jpg',
+        'https://www.superherodb.com/pictures2/portraits/10/100/1122.jpg',
+        'https://www.superherodb.com/pictures2/portraits/10/100/679.jpg',
+        'https://www.superherodb.com/pictures2/portraits/10/100/140.jpg',
+        "https://www.superherodb.com/pictures2/portraits/10/100/161.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/85.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/274.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/659.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/55.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/83.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/22.jpg",
+        "https://www.superherodb.com/pictures2/portraits/10/100/10017.jpg",
+        'https://www.superherodb.com/pictures2/portraits/10/100/10015.jpg',
+        "https://www.superherodb.com/pictures2/portraits/10/100/127.jpg",
+        'https://www.superherodb.com/pictures2/portraits/10/100/10010.jpg',
+        'https://www.superherodb.com/pictures2/portraits/10/100/50.jpg',
+        "https://www.superherodb.com/pictures2/portraits/10/100/771.jpg"
+,
+
+
+
+
+
+
+]
 
 
         
@@ -180,19 +259,42 @@
         })
         fix */
         
-        for(var i = 0; i< pics.length;i++){
+        /* for(var i = 0; i< pics.length;i++){
 
-        let select = Math.floor(Math.random() * pics.length)
-
+            
             columns[i].style.backgroundImage = `url('${pics[select]}')`
-        
-            pics.splice(select,1 )
-
+            
+            pics.splice(select,1)
+            
+        } */
+        var i = 0, howManyTimes = 100;
+        function f() {
+            let select = Math.floor(Math.random() * pics.length)
+            columns[i].style.backgroundImage = `url('${pics[select]}')`
+        pics.splice(select,1)
+         i++;
+    if( i < howManyTimes ){
+        setTimeout( f, 5000 );
     }
+function infinite(){
+    return f();
+            }
+}
+
+f();
+
+
+
     
 
 
     </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src = "src/Database.js"></script>
     <script src = "src/Signup.js"></script>
     <script src = "src/User.js"></script>

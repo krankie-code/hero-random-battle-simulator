@@ -72,6 +72,13 @@ class Signup {
         this.emailInput.value = '';
         this.passwordInput.value = '';
         this.repeatPasswordInput = '';
+      
+
+        validator.resetValidators();
+         
+       this.buttonInput.disabled = true;
+
+         window.location.href = "/index.html"
 
     }
 

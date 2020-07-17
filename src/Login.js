@@ -2,11 +2,11 @@
 
 class Login{
     constructor(){
-        this.emailInput = document.getElementById('exampleInputEmail1')
-        this.passwordInput = document.getElementById('exampleInputPassword1')
+        this.emailInput = document.getElementById('exampleEmail1')
+        this.passwordInput = document.getElementById('examplePassword1')
         
-        this.loginButton = document.querySelector('.btn')
-        this.messageContainer = document.querySelector('.message-container')
+        this.loginButton = document.querySelector('.btn1')
+        this.messageContainer = document.querySelector('.message-container1')
     }
 
     submit = (event) =>{
@@ -47,7 +47,7 @@ class Login{
         
       }
       redirect = () => {
-        setTimeout( ()=> location.assign('https://www.google.es/'), 2000);
+        setTimeout( ()=> location.assign('https://www.google.es/'), 4000);
       }
     
     }

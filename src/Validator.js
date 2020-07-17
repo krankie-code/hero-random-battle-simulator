@@ -43,7 +43,7 @@ class Validator{
             })
 
             if(emailUnique){
-                 delete this.errors.repeatPasswordError
+                 delete this.errors.emailExists
             }else{
                 this.errors.emailExists = this.emailExists
             }

@@ -1,147 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-    <div class = "icon">
+    <div class="icon">
         <i class="fa fa-volume-up"></i>
     </div>
     <header>
-        
-     <img src="img\rhb.png" alt="logo" class = "logo1">
-        <nav>
-            <div class ="nav-bar">
-                <h6>Do you have the strength to become a superheroe?</h6>
-            <ul class = "nav_links">
-                <li><a href="#">Home</a>   </li>
-                <li><a href="#">Heroes</a></li>
-                <li> <a href="#">Compete</a></li>
-                <li><a href="#">Ranking</a></li>
-                <li><a href="#about">About</a></li>
-                                 
 
-            </ul>
-          </div>
+        <img src="img\rhb.png" alt="logo" class="logo1">
+        <nav>
+            <div class="nav-bar">
+                <h6>Do you have the strength to become a superheroe?</h6>
+                <ul class="nav_links">
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Heroes</a></li>
+                    <li> <a href="#">Compete</a></li>
+                    <li><a href="#">Ranking</a></li>
+                    <li><a href="#about">About</a></li>
+
+
+                </ul>
+            </div>
         </nav>
-        <img class = "logo"src="img\random heroe.png" alt="">
-        
-        <form class = "buttons" action="">
-            <button data-target="#modal" data-toggle="modal" type='button' id = "button">Log in</button>
-            <button data-target="#modal1" data-toggle="modal" class ="right sign"type ='button' id ='buttonL'>Sign in</button>
+        <img class="logo" src="img\random heroe.png" alt="">
+
+        <form class="buttons" action="">
+            <button data-target="#modal" data-toggle="modal" type='button' id="button">Log in</button>
+            <button data-target="#modal1" data-toggle="modal" class="right sign" type='button' id='buttonL'>Sign
+                in</button>
         </form>
-    </header> 
+    </header>
+    
     <div class="container">
-        <a class = "game" href ="game.html">Let's Battle</a>
-  <div class="row">
-    <div class="col col1"></div>
-    <div class="col col2"></div>
-    <div class="col col3"></div>
-    <div class="col col4"></div>
-    <div class="col col5"></div>
-  </div>
-</div>
-    <section id ="about">
-        <h2 class = "about">FAQ</h2>
-        <div class = "questions">
+        <div class="row">
+            <div class="col-sm-12 text-center"><a class="game" href="game.html">Let's Battle</a></div>
+        </div>
+        <div class="row">
+            <div class="col col1 col-sm-6 col-md-3 col-12"></div>
+            <div class="col col2 col-sm-6 col-md-3 col-12"></div>
+            <div class="col col3 col-sm-6 col-md-3 col-12"></div>
+            <div class="col col4 col-sm-6 col-md-3 col-12"></div>
+        </div>
+    </div>
+    <section id="about">
+        <h2 class="about">FAQ</h2>
+        <div class="questions">
             <h3>From where did you get this awesome API</h3>
             <p>The site is called Superheroe API. They provide a huge variety of heoe objects with a lot of data</p>
         </div>
-        <div class = 'questions'>
-          <h3>Is this site In working progress?</h3>
-          <p>Yes, some functionallities will come later on, such as the whole heroe list or the battle system instalation</p>
+        <div class='questions'>
+            <h3>Is this site In working progress?</h3>
+            <p>Yes, some functionallities will come later on, such as the whole heroe list or the battle system
+                instalation</p>
         </div>
-        <div class = 'questions'>
-          <h3>Do you plan to use animations</h3>
-          <p>Yes, manly used on the battle system</p>
+        <div class='questions'>
+            <h3>Do you plan to use animations</h3>
+            <p>Yes, manly used on the battle system</p>
         </div>
-        <div class = 'questions'>
-        <h3>Which one is your favourite heroe?</h3>
-        <p>My favourite heroe is probably Venom.</p>
-        <div class = 'questions'>
-          <h3>How is the displaying song called</h3>
-          <p>Populary known as 'la cumbia de los Vengadores'</p>
-    </div>
+        <div class='questions'>
+            <h3>Which one is your favourite heroe?</h3>
+            <p>My favourite heroe is probably Venom.</p>
     </section>
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-            <img class ="user" src="img\user.png" alt="">
-              <h5 class="modal-title" id="exampleModalLabel">SIGN IN</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <section class = "d-flex justify-content-center ">
-            
-                    <form>
-                         <div class="form-group">
-                            <input type="text" class="form-control" id="exampleName" placeholder="Name">
-                          </div>
-                          <div class="form-group">
-                            <input type="text" class="form-control" id="examplePower" placeholder="Your superhero power">
-                          </div>
-                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                          </div>
-                          <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                          </div>
-                          <div class="form-group">
-                            <input type="password" class="form-control" id="exampleRepeatPassword1" placeholder="Repeat password">
-                          </div>
-                          <div class="message-container"></div>
-                          
-                        </form>
-                    </section>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="user" src="img\user.png" alt="">
+                    <h5 class="modal-title" id="exampleModalLabel">SIGN IN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" id = "btn" href = "">Submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-            <img class ="user" src="img\user.png" alt="">
-              <h5 class="modal-title" id="exampleModalLabel">SIGN IN</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <section class = "d-flex justify-content-center ">
+                <div class="modal-body">
+                    <section class="d-flex justify-content-center ">
+
                         <form>
-                         <div class="form-group">
-                            <input type="text" class="form-control" id="exampleEmail1" placeholder="Name">
-                          </div>
-                          <div class="form-group">
-                            <input type="text" class="form-control" id="examplePassword1" placeholder="Email">
-                          </div>
-                         
-                          <div class="message-container1"></div>
-                          
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleName" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="examplePower"
+                                    placeholder="Your superhero power">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleRepeatPassword1"
+                                    placeholder="Repeat password">
+                            </div>
+                            <div class="message-container"></div>
+
                         </form>
                     </section>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary btn1"  href = "">Submit</button>
+                    <button type="button" class="btn btn-primary" id="btn" href="">Submit</button>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="user" src="img\user.png" alt="">
+                    <h5 class="modal-title" id="exampleModalLabel">SIGN IN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <section class="d-flex justify-content-center ">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleEmail1" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="examplePassword1" placeholder="Email">
+                            </div>
+
+                            <div class="message-container1"></div>
+
+                        </form>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn1" href="">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- <div class="pop2">
             <div class="model-content">
                 <div class="model-header">
@@ -167,7 +176,6 @@
     </div> -->
     <footer></footer>
     <script>
-
         /* const openModalButtons = document.querySelectorAll('[data-modal-target]')
         const closeModalButtons = document.querySelectorAll('[data-close-button]')
 
@@ -187,7 +195,7 @@
         }
      */
 
-       /*  function random (){
+        /*  function random (){
     var selectN = Math.floor(Math.random()*731)
     var string = `url:(https://superheroapi.com/api/599075271045222/${selectN})`
 
@@ -201,63 +209,62 @@
     }   
     console.log(arr);
      */
-    
 
 
-    var columns = document.querySelectorAll('.col')
 
-    var pics =["https://www.superherodb.com/pictures2/portraits/10/100/1485.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/940.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/637.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/1293.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/1381.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/879.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/722.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/810.jpg",
-        'https://www.superherodb.com/pictures2/portraits/10/100/326.jpg',
-        'https://www.superherodb.com/pictures2/portraits/10/100/1041.jpg',
-        'https://www.superherodb.com/pictures2/portraits/10/100/1039.jpg',
-        "https://www.superherodb.com/pictures2/portraits/10/100/133.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/15.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/826.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/757.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/954.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/189.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/1468.jpg",
-        'https://www.superherodb.com/pictures2/portraits/10/100/10444.jpg',
-        'https://www.superherodb.com/pictures2/portraits/10/100/1122.jpg',
-        'https://www.superherodb.com/pictures2/portraits/10/100/679.jpg',
-        'https://www.superherodb.com/pictures2/portraits/10/100/140.jpg',
-        "https://www.superherodb.com/pictures2/portraits/10/100/161.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/85.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/274.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/659.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/55.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/83.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/22.jpg",
-        "https://www.superherodb.com/pictures2/portraits/10/100/10017.jpg",
-        'https://www.superherodb.com/pictures2/portraits/10/100/10015.jpg',
-        "https://www.superherodb.com/pictures2/portraits/10/100/127.jpg",
-        'https://www.superherodb.com/pictures2/portraits/10/100/10010.jpg',
-        'https://www.superherodb.com/pictures2/portraits/10/100/50.jpg',
-        "https://www.superherodb.com/pictures2/portraits/10/100/771.jpg"
-,
+        var columns = document.querySelectorAll('.col')
 
-
+        var pics = ["https://www.superherodb.com/pictures2/portraits/10/100/1485.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/940.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/637.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/1293.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/1381.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/879.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/722.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/810.jpg",
+            'https://www.superherodb.com/pictures2/portraits/10/100/326.jpg',
+            'https://www.superherodb.com/pictures2/portraits/10/100/1041.jpg',
+            'https://www.superherodb.com/pictures2/portraits/10/100/1039.jpg',
+            "https://www.superherodb.com/pictures2/portraits/10/100/133.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/15.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/826.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/757.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/954.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/189.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/1468.jpg",
+            'https://www.superherodb.com/pictures2/portraits/10/100/10444.jpg',
+            'https://www.superherodb.com/pictures2/portraits/10/100/1122.jpg',
+            'https://www.superherodb.com/pictures2/portraits/10/100/679.jpg',
+            'https://www.superherodb.com/pictures2/portraits/10/100/140.jpg',
+            "https://www.superherodb.com/pictures2/portraits/10/100/161.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/85.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/274.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/659.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/55.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/83.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/22.jpg",
+            "https://www.superherodb.com/pictures2/portraits/10/100/10017.jpg",
+            'https://www.superherodb.com/pictures2/portraits/10/100/10015.jpg',
+            "https://www.superherodb.com/pictures2/portraits/10/100/127.jpg",
+            'https://www.superherodb.com/pictures2/portraits/10/100/10010.jpg',
+            'https://www.superherodb.com/pictures2/portraits/10/100/50.jpg',
+            "https://www.superherodb.com/pictures2/portraits/10/100/771.jpg",
 
 
 
 
-]
 
 
-        
-       /*  pics.forEach((pic) =>{
-          columns.style.backgroundImage = `url(${pics[select]})`
-        })
-        fix */
-        
+        ]
+
+
+
+        /*  pics.forEach((pic) =>{
+           columns.style.backgroundImage = `url(${pics[select]})`
+         })
+         fix */
+
         /* for(var i = 0; i< pics.length;i++){
 
             
@@ -266,38 +273,45 @@
             pics.splice(select,1)
             
         } */
-        var i = 0, howManyTimes = 100;
-        function f() {
+            var i = 0,
+            howManyTimes = 4;
+
+            function f() {
             let select = Math.floor(Math.random() * pics.length)
             columns[i].style.backgroundImage = `url('${pics[select]}')`
-        pics.splice(select,1)
-         i++;
-    if( i < howManyTimes ){
-        setTimeout( f, 5000 );
-    }
-function infinite(){
-    return f();
+            pics.splice(select, 1)
+            i++
+            if(i == 4){
+                i=0
             }
-}
+        }
+        setInterval(f, 5000);
 
-f();
-
-
-
-    
-
-
+        
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src = "src/Database.js"></script>
-    <script src = "src/Signup.js"></script>
-    <script src = "src/User.js"></script>
-    <script src = "src/Validator.js"></script>
-    <script src= "src/Login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="src/Database.js"></script>
+    <script src="src/Signup.js"></script>
+    <script src="src/User.js"></script>
+    <script src="src/Validator.js"></script>
+    <script src="src/Login.js"></script>
 </body>
+
 </html>

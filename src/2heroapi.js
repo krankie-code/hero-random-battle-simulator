@@ -2,11 +2,13 @@
 
 
 function getHeroes(){
-        window.r
+    
 
             
 
     const heroes = document.querySelector('.heroes');
+    heroes.innerHTML = '';
+
         let randomHeroes = []
 
         while(randomHeroes.length < 4){
@@ -27,6 +29,7 @@ function getHeroes(){
                     
                     
                     const article = document.createElement('article');
+                        article.classList.add('column');
                     article.innerHTML =`
                     <h3>${data.name}</h3> 
                     <img src = "${data.image.url}" alt = "${data.name}"/>
@@ -41,6 +44,12 @@ function getHeroes(){
                     `
                     console.log(data)
                     heroes.appendChild(article)
+                    if(counter == 0){
+                        heroes.innerHTML += `<div class="column">
+                                                    <img class ="versus" src="img\\versus-symbol-png-6.png" alt="">
+                                                </div>`
+                    }
+                    
                     counter++
                     
                          
